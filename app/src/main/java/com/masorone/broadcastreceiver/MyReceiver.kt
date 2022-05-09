@@ -11,6 +11,8 @@ class MyReceiver : BroadcastReceiver() {
         when (intent?.action) {
             Intent.ACTION_BATTERY_LOW ->
                 Toast.makeText(context, "ACTION_BATTERY_LOW", Toast.LENGTH_SHORT).show()
+            Intent.ACTION_AIRPLANE_MODE_CHANGED ->
+                Toast.makeText(context, "ACTION_AIRPLANE_MODE_CHANGED", Toast.LENGTH_SHORT).show()
         }
     }
 }
